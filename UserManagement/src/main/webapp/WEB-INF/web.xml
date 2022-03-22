@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+         
+         
+         
+         <servlet>
+		<servlet-name>UserLogin</servlet-name>
+		<servlet-class>com.userlogin.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserLogin</servlet-name>
+		<url-pattern>/log</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	 <servlet>
+    	<servlet-name>UserRegistration</servlet-name>
+    	<servlet-class>com.userlogin.RegistrationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>UserRegistration</servlet-name>
+    	<url-pattern>/insert</url-pattern>
+    </servlet-mapping>
+	
+	
+	
+	<servlet>
+    	<servlet-name>UserSearch</servlet-name>
+    	<servlet-class>com.userlogin.UserSearchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>UserSearch</servlet-name>
+    	<url-pattern>/search</url-pattern>
+    </servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>UpdateUser</servlet-name>
+		<servlet-class>com.userlogin.UpdateUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateUser</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>DeleteUser</servlet-name>
+		<servlet-class>com.userlogin.DeleteUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteUser</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>UserManagerSearch</servlet-name>
+		<servlet-class>com.userlogin.UserManagerSearchServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserManagerSearch</servlet-name>
+		<url-pattern>/ManagerSearch</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>UserManagerDelete</servlet-name>
+		<servlet-class>com.userlogin.UserManagerDeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserManagerDelete</servlet-name>
+		<url-pattern>/ManagerDelete</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+<servlet-name>loginm</servlet-name>
+<servlet-class>com.userlogin.managerloginservlet</servlet-class>
+</servlet>
+
+
+
+
+<servlet-mapping>
+<servlet-name>loginm</servlet-name>
+<url-pattern>/newM</url-pattern>
+</servlet-mapping>
+	
+	
+	
+	
+    </web-app>     
