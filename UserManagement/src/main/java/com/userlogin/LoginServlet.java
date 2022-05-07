@@ -20,11 +20,11 @@ public class LoginServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		response.setContentType("text/html");
 		
-		String Email = request.getParameter("Email");
+		String username = request.getParameter("username");
 		String password = request.getParameter("password");
 		boolean isTrue;
 		
-		isTrue =  UserDBUtil.validate(Email,password);
+		isTrue =  UserDBUtil.validate(username,password);
 		
 		if (isTrue == true) {
 			

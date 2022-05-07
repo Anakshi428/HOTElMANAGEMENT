@@ -75,7 +75,7 @@ html {
 
 <div class="success-msg">
   <i class="fa fa-check"></i>
-  Welcome to DIREX!  You have logged successfully.
+  Welcome to Ceylon Paradise!  You have logged successfully.
 </div>
 <jsp:include page="/WEB-INF/view//Footer.jsp"></jsp:include>
 </body>

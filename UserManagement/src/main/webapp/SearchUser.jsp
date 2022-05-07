@@ -1793,50 +1793,32 @@ body {
     </tr>
     
     <tr>
+      <th scope="row">USER NAME</th> 
+      <td class="bg-danger"style="border-radius: 25px 25px;"></td>
+    </tr>
+    
+    
+    <tr>
       <th scope="row">PASSWORD</th> 
       <td class="bg-danger"style="border-radius: 25px 25px;"></td>
     </tr>
     
     
-    <tr>
-      <th scope="row">AREA CODE</th> 
-      <td class="bg-danger"style="border-radius: 25px 25px;"></td>
-    </tr>
-    
-    
     
     <tr>
-      <th scope="row">NUMBER</th> 
+      <th scope="row">PHONE NUMBER</th> 
       <td class="bg-danger"style="border-radius: 25px 25px;"></td>
     </tr>
     
     
     
-     <tr>
-      <th scope="row">TRAVELLER TYPE</th> 
-      <td class="bg-danger"style="border-radius: 25px 25px;"></td>
-    </tr>
-    
-    
-    
-    <tr>
-      <th scope="row">COUNTRY</th> 
-      <td class="bg-danger"style="border-radius: 25px 25px;"></td>
-    </tr>
-    
-    
-    
-    <tr>
-      <th scope="row">PASSPORT NO</th> 
-      <td class="bg-danger"style="border-radius: 25px 25px;"></td>
-    </tr>
     
     
     
   
 </table>
 
-<a href="#"class="animated-button1" style="margin: 12px 350px;padding: 6px 6px;width: 50%; border-radius:25px">
+<a href="UpdateProfile.jsp"class="animated-button1" style="margin: 12px 350px;padding: 6px 6px;width: 50%; border-radius:25px">
 	
 	<span></span>
   <span></span>
@@ -1844,7 +1826,7 @@ body {
   <span></span>
   Update
 	</a>
-<a href="#"class="animated-button1" style="margin: 12px 350px;padding: 6px 6px;width: 50%; border-radius:25px">
+<a href="DeleteProfile.jsp"class="animated-button1" style="margin: 12px 350px;padding: 6px 6px;width: 50%; border-radius:25px">
 	
 	<span></span>
   <span></span>

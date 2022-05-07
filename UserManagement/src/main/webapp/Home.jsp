@@ -9,7 +9,36 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>DIREX</title>
+ <title> Home</title>
+    
+    <!-- meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Art Sign Up Form Responsive Widget, Audio and Video players, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, 
+		Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design"
+    />
+    <!-- /meta tags -->
+    <!-- custom style sheet -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <!-- /custom style sheet -->
+    <!-- fontawesome css -->
+    <link href="assets/css/fontawesome-all.css" rel="stylesheet" />
+    <!-- /fontawesome css -->
+    <!-- google fonts-->
+    <link href="assets/webfonts/fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <!-- /google fonts-->
+<link rel="stylesheet" type="text/css" href="assets/css/style-starter.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<style>@font-face {
+  font-family: 'FontAwesome';
+  src: url('assets/webfonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('assets/webfonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('assets/webfonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('assets/webfonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('assets/webfonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('assets/webfonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  }
+  </style>
   <!-- google fonts -->
   <link href="//fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link href="//fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
@@ -19,7 +48,7 @@
   <link rel="stylesheet" href="assets/css/style-starter.css">
   <!-- Template CSS -->
   
-  <title> Home</title>
+  
   
   
   
@@ -175,82 +204,9 @@ input[type=submit]:hover {
 
 
 <body>
+<jsp:include page="/WEB-INF/view//Header.jsp"></jsp:include>
   <!--header-->
-  <header id="site-header" class="fixed-top">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg stroke">
-        <a class="navbar-brand" href="index.html">
-            <img src="assets/images/logo 2.png"  style="height:25px;" />
-        </a> 
-        <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
-          data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
-          <span class="navbar-toggler-icon fa icon-close fa-times"></span>
-          </span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="Home.jsp">Home </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">Bookings</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Payments</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="services.html">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="services.html">About Us</a>
-              </li>
-    
-          </ul>
-        </div>
-
-        <!-- toggle switch for light and dark theme -->
-        <div class="mobile-position">
-          <nav class="navigation">
-            <div class="theme-switch-wrapper">
-              <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox">
-                <div class="mode-container">
-                  <i class="gg-sun"></i>
-                  <i class="gg-moon"></i>
-                </div>
-              </label>
-            </div>
-          </nav>
-        </div>
-        <!-- //toggle switch for light and dark theme -->
-
-
-
-    </header>
-        <section class="w3l-main-slider" id="home">
-    <div class="banner-content">
-      <div id="demo-1"
-        data-zs-src='["assets/images/a1.jpg", "assets/images/a2.jpg","assets/images/a3.jpg", "assets/images/a4.jpg","assets/images/a5.jpg","assets/images/a6.jpg","assets/images/a7.png","assets/images/a8.jpg","assets/images/a9.jpg"]' 
-        data-zs-overlay="dots">
-        <div class="demo-inner-content">
-          <div class="container">
-            <div class="banner-infhny">
-              <h4>You don't need to go far to find what matters.</h4>
-              <h6 class="mb-3">Discover your next adventure</h6>
-              <a href="UserLogin.jsp"><button class="custom-btn btn-6"><span>SIGN IN</span></button></a>
-              <a href="UserRegistration.jsp"><button class="custom-btn btn-6"><span>SIGN UP</span></button></a>
-              <div class="flex-wrap search-wthree-field mt-md-5 mt-4">
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  
   
    
  
@@ -260,14 +216,20 @@ input[type=submit]:hover {
 <section class="w3l-grids-3 py-5">
     <div class="container py-md-5">
       <div class="title-content text-left mb-lg-5 mb-4">
-        <h3 class="sub-title">DIREX Tours</h3>
-        <h4 class="hny-title">Start Your Journey</h4>
+        <h3 class="sub-title">Ceylon Paradise</h3>
+        <h4 class="hny-title">Start Your Journey</h4><br>
+        <h4 class="hny-title">Cannot get your hotel operations sorted? We can.<br>
+        Check out this hotel management solution used by 3,000+ properties in Sri Lanka.</h4>
       </div>
       </div>
 		
+<a href ="UserRegistration.jsp">
+     <button type="submit" style="margin: 1px 190px;padding: 12px 12px; border-radius: 12px; width:10%;">Sign up</button>
+  </a>
 
-     
-  
+  <a href ="UserLogin.jsp">
+     <button type="submit" style="margin: 12px -100px; padding:12px 12px; border-radius: 12px; width: 10%;">Sign in</button>
+  </a>
 
 <p style="text-align: center;">&nbsp;</p>
 
@@ -324,13 +286,18 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat';}
       <div class="row align-items-center">
       
         <div class="col-sm-5 subject-img">
-          <img src="assets/images/a5.jpg" class="img-fluid" alt="">
+          <img src="assets/images/d2.jpg" class="img-fluid" alt="">
         </div>
         <div class="col-sm-7 subject-content mt-sm-0 mt-4">
-          <h4>Travel in SriLanka</h4>
-          <p>For both local and foreign tourists</p>
+          <h4>Shangri-la</h4>
+          <p>Unlock a world of wonder 
+
+Overlooking the pristine southern coast of Sri Lanka, Shangri-La Hambantota is home to an 18-hole championship golf course, which is the only resort course in the country, an expansive spa featuring exceptional Ayurveda treatments, and a unique artisan village that showcases local arts and crafts.
+274 rooms, including 20 suites
+Sri Lanka’s only 18-hole golf resort course
+Shangri-La Cares: Our commitment to your well-being in our care.</p>
           <div class="dst-btm">
-            <h6 class="">Accommodation,Transportation and lots of facilities</h6><br>
+            <h6 class="">Accommodation facilities</h6><br>
             <span>You can customized your own package</span>
           </div>
           <p class="sub-para">Click here for more details</p>
@@ -345,13 +312,19 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat';}
       <div class="row align-items-center">
       
         <div class="col-sm-5 subject-img">
-          <img src="assets/images/c11.jpg" class="img-fluid" alt="">
+          <img src="assets/images/d3.jpg" class="img-fluid" alt="">
         </div>
         <div class="col-sm-7 subject-content mt-sm-0 mt-4">
-          <h4>Travel in Aboard</h4>
-          <p>For Local  tourists</p>
+          <h4>Heritance Kandalama</h4>
+          <p>A tranquil retreat perched on hills, Heritance Kandalama offers panoramic views of the Sigiriya Rocks. Boasting a spectacular architecture, this unique design hotel provides 3 impressive pools and exotic activities like bird watching.
+
+Kandalama Heritance is a 20-minute drive from UNESCO World Heritage Sites, the 2,000-year-old cave temple at Dambulla and the Sigiriya rock fortress. The 5-star hotel is a 3.5-hour drive from the airport.
+
+The spacious rooms are fitted with rattan furniture and timber panels. Each comes with a private bathroom featuring oversized glass walls that allow much natural light in.
+
+The hotel features tennis courts, a well-equipped gym and the well-known Coco Spa. To enjoy Sri Lanka’s breathtaking natural landscapes, the hotel offers various excursions like mountain cycling excursions and lake safaris.</p>
           <div class="dst-btm">
-            <h6 class="">Accommodation and lots of facilities</h6><br>
+            <h6 class="">Accommodation facilities</h6><br>
             <span>You can select your own package</span>
           </div>
           <p class="sub-para">Click here for more details</p>
@@ -370,11 +343,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat';}
           <div class="maghny-gd-1 col-lg-6">
             <div class="maghny-grid">
               <figure class="effect-lily border-radius  m-0">
-                  <img class="img-fluid" src="assets/images/g10.jpg" alt="" />
+                  <img class="img-fluid" src="assets/images/d4.jpg" alt="" />
                   <figcaption>
                       <div>
-                          <h4>3Days, 4 Nights</h4>
-                          <p>From 1720$ </p>
+                          <h4>Malabar Hill</h4>
+                          
                       </div>
 
                   </figcaption>
@@ -386,11 +359,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat';}
                   <div class="maghny-gd-1 col-6">
                       <div class="maghny-grid">
                           <figure class="effect-lily border-radius">
-                              <img class="img-fluid" src="assets/images/g9.jpg" alt="" />
+                              <img class="img-fluid" src="assets/images/d6.jpg" alt="" />
                               <figcaption>
                                   <div>
-                                      <h4>3Days, 4 Nights</h4>
-                                      <p>From 1220$ </p>
+                                      <h4>Wild Coast Tented Lodge</h4>
+                                     
                                   </div>
 
                               </figcaption>
@@ -400,11 +373,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat';}
                   <div class="maghny-gd-1 col-6">
                       <div class="maghny-grid">
                           <figure class="effect-lily border-radius">
-                              <img class="img-fluid" src="assets/images/g8.jpg" alt="" />
+                              <img class="img-fluid" src="assets/images/d7.jpg" alt="" />
                               <figcaption>
                                   <div>
-                                      <h4>3Days, 4 Nights</h4>
-                                      <p>From 1620$ </p>
+                                      <h4>Uga Chena Huts</h4>
+                                      
                                   </div>
 
                               </figcaption>
@@ -414,11 +387,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat';}
                   <div class="maghny-gd-1 col-6 mt-4">
                       <div class="maghny-grid">
                           <figure class="effect-lily border-radius">
-                              <img class="img-fluid" src="assets/images/g7.jpg" alt="" />
+                              <img class="img-fluid" src="assets/images/d8.jpg" alt="" />
                               <figcaption>
                                   <div>
-                                      <h4>3Days, 4 Nights</h4>
-                                      <p>From 1820$ </p>
+                                      <h4>Jetwing Yala</h4>
+                                     
                                   </div>
 
                               </figcaption>
@@ -428,11 +401,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat';}
                   <div class="maghny-gd-1 col-6 mt-4">
                       <div class="maghny-grid">
                           <figure class="effect-lily border-radius">
-                              <img class="img-fluid" src="assets/images/g6.jpg" alt="" />
+                              <img class="img-fluid" src="assets/images/d9.jpg" alt="" />
                               <figcaption>
                                   <div>
-                                      <h4>3Days, 4 Nights</h4>
-                                      <p>From 1520$ </p>
+                                      <h4>Laya Safari</h4>
+                                      
                                   </div>
 
                               </figcaption>
@@ -458,189 +431,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat';}
 
 
 
-  <footer>
-    <!-- footer -->
-    <section class="w3l-footer">
-      <div class="w3l-footer-16-main py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 column">
-              <div class="row">
-                <div class="col-md-4 column">
-                  <h3>Company</h3>
-                  <ul class="footer-gd-16">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="blog.html">Feedback</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                  </ul>
-                </div>
-                <div class="col-md-4 column mt-md-0 mt-4">
-                  <h3>Contact Us</h3>
-                  <ul class="footer-gd-16">
-                    <li><b>Hotline</b> </li>
-                    <li>+9411 2 404 333</li>
-                    <li><b>DIREX Tours Head Office</b> </li>
-                    <li>+9411 2 404 232   +9411 2 404 878</li>
-                    <li><b>Address</b></li>
-                    <li>No 65, Galle Road, Colombo 03.</li>
-                  </ul>
-                </div>
-                <div class="col-md-4 column mt-md-0 mt-4">
-                  <h3>About Us</h3>
-                  <ul class="footer-gd-16">
-                    <li>With DIREX Tours,
-                         you can make a direct connection with some of the world’s most frequent travel guiders.
-                          Our readers are actively researching and planning for your next trip, 
-                          and come to us for travel ideas and inspiration.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-12 column pl-lg-5 column4 mt-lg-0 mt-5">
-              <h3>Newsletter </h3>
-              <div class="end-column">
-                <h4>Get latest updates and offers.</h4>
-                <form action="#" class="subscribe" method="post">
-                  <input type="email" name="email" placeholder="Email Address" required="">
-                  <button type="submit">Submit</button>
-                </form>
-                <p>Sign up for our latest news & articles. We won’t give you spam mails.</p>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex below-section justify-content-between align-items-center pt-4 mt-5">
-            <div class="columns text-lg-left text-center">
-              <p>&copy; 2021 DIREX Tours. All rights reserved. Design by DIREX </p>
-            </div>
-            <div class="columns-2 mt-lg-0 mt-3">
-              <ul class="social">
-                <li><a href="#facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-                </li>
-                <li><a href="#linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
-                </li>
-                <li><a href="#twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-                </li>
-                <li><a href="#google"><span class="fa fa-google-plus" aria-hidden="true"></span></a>
-                </li>
-                <li><a href="#github"><span class="fa fa-github" aria-hidden="true"></span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+ 
   
-      <!-- move top -->
-      <button onclick="topFunction()" id="movetop" title="Go to top">
-        <span class="fa fa-angle-up"></span>
-      </button>
-      <script>
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () {
-          scrollFunction()
-        };
+      
   
-        function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("movetop").style.display = "block";
-          } else {
-            document.getElementById("movetop").style.display = "none";
-          }
-        }
-  
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
-      </script>
-      <!-- //move top -->
-      <script>
-        $(function () {
-          $('.navbar-toggler').click(function () {
-            $('body').toggleClass('noscroll');
-          })
-        });
-      </script>
-    </section>
-    <!-- //footer -->
-  </footer>
-  <!-- Template JavaScript -->
-  <script src="assets/js/jquery-3.3.1.min.js"></script>
-  <script src="assets/js/theme-change.js"></script>
-  <!--/slider-js-->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/modernizr-2.6.2.min.js"></script>
-  <script src="assets/js/jquery.zoomslider.min.js"></script>
-  <!--//slider-js-->
-  <script src="assets/js/owl.carousel.js"></script>
-  <!-- script for tesimonials carousel slider -->
-  <script>
-    $(document).ready(function () {
-      $("#owl-demo1").owlCarousel({
-        loop: true,
-        margin: 20,
-        nav: false,
-        responsiveClass: true,
-        responsive: {
-          0: {
-            items: 1,
-            nav: false
-          },
-          736: {
-            items: 1,
-            nav: false
-          },
-          1000: {
-            items: 1,
-            nav: false,
-            loop: true
-          }
-        }
-      })
-    })
-  </script>
-  <!-- //script for tesimonials carousel slider -->
-  <!-- stats number counter-->
-  <script src="assets/js/jquery.waypoints.min.js"></script>
-  <script src="assets/js/jquery.countup.js"></script>
-  <script>
-    $('.counter').countUp();
-  </script>
-  <!-- //stats number counter -->
-
-  <!--/MENU-JS-->
-  <script>
-    $(window).on("scroll", function () {
-      var scroll = $(window).scrollTop();
-      if (scroll >= 80) {
-        $("#site-header").addClass("nav-fixed");
-      } else {
-        $("#site-header").removeClass("nav-fixed");
-      }
-    });
-    //Main navigation Active Class Add Remove
-    $(".navbar-toggler").on("click", function () {
-      $("header").toggleClass("active");
-    });
-    $(document).on("ready", function () {
-      if ($(window).width() > 991) {
-        $("header").removeClass("active");
-      }
-      $(window).on("resize", function () {
-        if ($(window).width() > 991) {
-          $("header").removeClass("active");
-        }
-      });
-    });
-  </script>
-  <!--//MENU-JS-->
-
-  <script src="assets/js/bootstrap.min.js"></script>
-
+<jsp:include page="/WEB-INF/view//Footer.jsp"></jsp:include>
 </body>
 
 </html>

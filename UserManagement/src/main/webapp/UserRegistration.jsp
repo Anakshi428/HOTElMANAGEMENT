@@ -123,6 +123,13 @@
                </code> </div>
             </div>
             
+            <div class=" w3l-form-group">
+                <label>UserName:</label>
+                <div class="group">
+                    <i class="fas fa-user"></i><code class="hljs xml">
+                    <input  class="form-control" placeholder="Username" required="required" name="username" />
+               </code> </div>
+            </div>
             
             
             <div class=" w3l-form-group">
@@ -134,47 +141,21 @@
                 </div>
             </div>
             
-            
             <div class=" w3l-form-group">
-                <label>Area Code:</label>
+                <label>Phone number:</label>
                 <div class="group">
-                    <i class="fas fa-user"></i>
-                    <input type="text" class="form-control" placeholder="Area Code" required="required" name="areacode"/>
-                     
+                    <i class="fas fa-unlock"></i>
+                    
+                    <input  class="form-control" placeholder="Phone no" required="required" name="phoneno"  required>
                 </div>
             </div>
             
-            <div class=" w3l-form-group">
-                <label>Number:</label>
-                <div class="group">
-                    <i class="fas fa-user"></i>
-                    <input type="text" class="form-control" placeholder="Number" required="required" name="number"/>
-                </div>
-            </div>
+           
             
-            <div class=" w3l-form-group">
-                <label>Traveler Type:</label>
-                <div class="group">
-                    <i class="fas fa-user"></i>
-                    <input type="text" class="form-control" placeholder="Traveller Type" required="required" name="type"/>
-                </div>
-            </div>
             
-            <div class=" w3l-form-group">
-                <label>Country:</label>
-                <div class="group">
-                    <i class="fas fa-user"></i>
-                    <input type="text" class="form-control" placeholder="Country" required="required" name="country"/>
-                </div>
-            </div>
             
-            <div class=" w3l-form-group">
-                <label>Passport Number:</label>
-                <div class="group">
-                    <i class="fas fa-user"></i>
-                    <input type="text" class="form-control" placeholder="Passport Number" required="required" name="passport"/>
-                </div>
-            </div>
+            
+            
             
             
             

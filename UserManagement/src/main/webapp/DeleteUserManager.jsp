@@ -168,12 +168,10 @@ h2{
 	String userid = request.getParameter("userid");
 	String name = request.getParameter("name");
 	String email = request.getParameter("email");
+	String username = request.getParameter("username");
 	String password = request.getParameter("password");
-	String areacode = request.getParameter("areacode");
-	String number = request.getParameter("number");
-	String travellertype = request.getParameter("type");
-	String country = request.getParameter("country");
-	String passportno = request.getParameter("passport");
+	String phoneno = request.getParameter("phoneno");
+	
 	%>
 	
 	<h1 style="color:#fc3955;text-align:center;">Remove Traveler Account</h1><br>
@@ -191,19 +189,13 @@ h2{
            <tbody>  <tr> <td><input class="form-control"type="text" name="name" value="<%=name%>" readonly></td></tr> </tbody>
             <thead>     <tr><th>Traveler Email</th></tr></thead>
             <tbody>  <tr> <td><input class="form-control"type="text" name="email" value="<%=email%>" readonly></td></tr> </tbody>
+            <thead>     <tr><th>User Name</th></tr></thead>
+            <tbody>  <tr><td><input class="form-control"type="password" name="password" value="<%=username%>" readonly></td></tr> </tbody>
             <thead>     <tr><th>Password</th></tr></thead>
-            <tbody>  <tr><td><input class="form-control"type="password" name="password" value="<%=password%>" readonly></td></tr> </tbody>
-            <thead>     <tr><th>Area code</th></tr></thead>
-            <tbody>  <tr><td><input class="form-control" type="text" name="areacode" value="<%=areacode%>" readonly></td></tr> </tbody>
-            <thead>     <tr><th>Number</th></tr></thead>
-            <tbody>  <tr><td><input class="form-control"type="text" name="number" value="<%=number%>" readonly></td></tr> </tbody>
-            <thead>     <tr><th>Traveler Type</th></tr></thead>
-            <tbody>  <tr> <td><input class="form-control"type="text" name="type" value="<%=travellertype%>" readonly></td></tr> </tbody>
-            <thead>     <tr><th>Country</th></tr></thead>
-            <tbody>  <tr><td><input class="form-control"type="text" name="country" value="<%=country%>" readonly></td></tr> </tbody>
-             <thead>     <tr><th>Passport No</th></tr></thead>
-             <tbody>  <tr> <td><input class="form-control"type="text" name="passport" value="<%=passportno%>" readonly></td></tr> </tbody>
-       
+            <tbody>  <tr><td><input class="form-control" type="text" name="areacode" value="<%=password%>" readonly></td></tr> </tbody>
+            <thead>     <tr><th>Phone Number</th></tr></thead>
+            <tbody>  <tr><td><input class="form-control"type="text" name="number" value="<%=phoneno%>" readonly></td></tr> </tbody>
+            
         
     </table>
 	<br>

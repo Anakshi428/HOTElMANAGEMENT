@@ -75,7 +75,7 @@ html {
 
 <div class="success-msg">
   <i class="fa fa-check"></i>
-  Welcome to DIREX!  You have registered successfully.
+  Welcome to Ceylon Paradise!  You have registered successfully.
 </div>
 <a href="SearchUser.jsp">
 <button type="submit" class="btn btn-danger">See your profile>>></button></a><br><br><br>

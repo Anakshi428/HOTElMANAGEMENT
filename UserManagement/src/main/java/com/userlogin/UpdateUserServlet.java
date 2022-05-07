@@ -20,16 +20,13 @@ public class UpdateUserServlet extends HttpServlet {
 		String userid = request.getParameter("userid");
 		String name = request.getParameter("name");
 		String email = request.getParameter("email");
+		String username = request.getParameter("username");
 		String password = request.getParameter("password");
-		String areacode = request.getParameter("areacode");
-		String number = request.getParameter("number");
-		String travellertype = request.getParameter("type");
-		String country = request.getParameter("country");
-		String passportno = request.getParameter("passport");
+		String phoneno = request.getParameter("phoneno");
 		
 boolean isTrue;
 		
-		isTrue = UserDBUtil.updateUser(userid,name,email,password,areacode ,number, travellertype, country , passportno);
+		isTrue = UserDBUtil.updateUser(userid,name,email,username,password,phoneno);
 		
 		if(isTrue == true) {
 			

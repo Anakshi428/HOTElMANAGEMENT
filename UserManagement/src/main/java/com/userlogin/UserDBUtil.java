@@ -14,12 +14,12 @@ public class UserDBUtil {
 	private static ResultSet rs = null;
 	
 	
-public static boolean validate(String Email, String password) {
+public static boolean validate(String username, String password) {
 		
 		try {
 			con = DBConnect.getConnection();
 			stmt = con.createStatement();
-			String sql = "select * from user where Email='"+Email+"' and Password='"+password+"'";
+			String sql = "select * from user where UserName ='"+username+"' and Password='"+password+"'";
 			rs = stmt.executeQuery(sql);
 			
 			if (rs.next()) {
@@ -77,14 +77,11 @@ public static List<user> getUser(String Email) {
 			int id = rs.getInt(1);
 			String name = rs.getString(2);
 			String email = rs.getString(3);
-			String password = rs.getString(4);
-			String areacode = rs.getString(5);
-			String number = rs.getString(6);
-			String travellertype = rs.getString(7);
-			String country = rs.getString(8);
-			String passportno = rs.getString(9);
+			String username = rs.getString(4);
+			String password = rs.getString(5);
+			String phoneno = rs.getString(6);
 			
-			user User = new user(id,name,email,password, areacode , number, travellertype, country , passportno );
+			user User = new user(id,name,email,username,password,phoneno );
 			USER.add(User);
 		}
 		
@@ -99,14 +96,14 @@ public static List<user> getUser(String Email) {
 
 
 
-public static boolean insertUser(String name,String email,String password, String areacode ,String number, String travellertype, String country , String passportno) {
+public static boolean insertUser(String name,String email,String username,String password, String  phoneno ) {
 	
 	boolean isSuccess = false;
 	
 	try {
 		con = DBConnect.getConnection();
 		stmt = con.createStatement();
-	    String sql = "insert into user values (0,'"+name+"','"+email+"','"+password+"','"+areacode+"','"+number+"','"+travellertype+"','"+country+"','"+passportno+"')";
+	    String sql = "insert into user values (0,'"+name+"','"+email+"','"+username+"','"+password+"','"+phoneno+"')";
 		int rs = stmt.executeUpdate(sql);
 		
 		if(rs > 0) {
@@ -126,13 +123,13 @@ public static boolean insertUser(String name,String email,String password, Strin
 
 
 
-public static boolean updateUser(String userid,String name,String email,String password, String areacode ,String number, String travellertype, String country , String passportno) {
+public static boolean updateUser(String userid,String name,String email,String username,String password,String  phoneno ) {
 	
 	try {
 		
 		con = DBConnect.getConnection();
 		stmt = con.createStatement();
-		String sql = "update user set Name='"+name+"',Email='"+email+"',Password='"+password+"',AreaCode='"+areacode+"',Number='"+number+"',TravellerType='"+travellertype+"',Country='"+country+"',PassportNo='"+passportno+"'"
+		String sql = "update user set Name='"+name+"',Email='"+email+"',UserName='"+username+"',Password='"+password+"',PhoneNo='"+phoneno+"'"
 				+ "where UserId='"+userid+"'";
 		int rs = stmt.executeUpdate(sql);
 		
@@ -171,14 +168,11 @@ public static List<user> getUserDetails(String userid) {
 			int id = rs.getInt(1);
 			String name = rs.getString(2);
 			String email = rs.getString(3);
-			String password = rs.getString(4);
-			String areacode = rs.getString(5);
-			String number = rs.getString(6);
-			String travellertype = rs.getString(7);
-			String country = rs.getString(8);
-			String passportno = rs.getString(9);
+			String username = rs.getString(4);
+			String password = rs.getString(5);
+			String phoneno = rs.getString(6);
 			
-			user User = new user(id,name,email,password, areacode , number, travellertype, country , passportno );
+			user User = new user(id,name,email,username,password,phoneno);
 			USER.add(User);
 		}
 		

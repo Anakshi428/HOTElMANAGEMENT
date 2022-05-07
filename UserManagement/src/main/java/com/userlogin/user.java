@@ -4,25 +4,18 @@ public class user {
 	private int userid;
 	private String name;
 	private String email;
+	private String username;
     private String password;
-    private String areacode;
-    private String number;
-    private String travellertype;
-    private String country;
-    private String passportno;
+    private String phoneno;
     
-	public user(int userid, String name, String email, String password, String areacode, String number,
-			String travellertype, String country, String passportno) {
+	public user(int userid, String name, String email, String username, String password, String phoneno) {
 		
 		this.userid = userid;
 		this.name = name;
 		this.email = email;
+		this.username = username;
 		this.password = password;
-		this.areacode = areacode;
-		this.number = number;
-		this.travellertype = travellertype;
-		this.country = country;
-		this.passportno = passportno;
+		this.phoneno = phoneno;
 	}
 
 	public int getUserid() {
@@ -43,50 +36,22 @@ public class user {
 
 	
 
+	public String getUsername() {
+		return username;
+	}
+
+	
+
 	public String getPassword() {
 		return password;
 	}
 
 	
-
-	public String getAreacode() {
-		return areacode;
-	}
-
-	
-
-	public String getNumber() {
-		return number;
-	}
-
-	
-	public String getTravellertype() {
-		return travellertype;
-	}
-
-	
-
-	public String getCountry() {
-		return country;
-	}
-
-	
-
-	public String getPassportno() {
-		return passportno;
+	public String getPhoneno() {
+		return phoneno;
 	}
 
 	
 	
-	    
-
-		
-
-		
-	    
-	    
-
-	   
-	}
-
-
+    
+}

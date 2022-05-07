@@ -40,7 +40,7 @@
 <jsp:include page="/WEB-INF/view//Header.jsp"></jsp:include>
 
 
-<div Style="background-image:url('assets/images/cover11.gif'); background-repeat:no-repeat; background-attachment: fixed;
+<div Style="background-image:url('assets/images/d1.jpg'); background-repeat:no-repeat;
   background-position: center center" ><br><br>
 <h1>Sign In</h1>
 	<div class="w3ls-login box box--big">
@@ -48,8 +48,8 @@
 		<form action="log" method="post">
 			<div class="agile-field-txt">
 				<label>
-					<i class="fa fa-user" aria-hidden="true"></i> Email </label>
-				<input type="email" name="Email" placeholder="Enter your email " required/>
+					<i class="fa fa-user" aria-hidden="true"></i> UserName</label>
+				<input type="text" name="username" placeholder="Enter your username "  id="myInput" required/>
 			</div>
 			<div class="agile-field-txt">
 				<label>

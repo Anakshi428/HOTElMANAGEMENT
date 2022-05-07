@@ -5,7 +5,7 @@
 <html lang="en">
 
 <head>
-    <title>Sign Up</title>
+    <title>User profile</title>
     
     <!-- meta tags -->
     <meta charset="UTF-8" />
@@ -1782,16 +1782,17 @@ Resources1× 0.5× 0.25×Rerun
 	
   <tbody>
   <c:forEach var="user" items="${UserDetails}">
-	
+  
 	<c:set var="userid" value="${user.userid}"/>
 	<c:set var="name" value="${user.name}"/>
 	<c:set var="email" value="${user.email}"/>
+	<c:set var="username" value="${user.username}"/>
 	<c:set var="password" value="${user.password}"/>
-	<c:set var="areacode" value="${user.areacode}"/>
-	<c:set var="number" value="${user.number}"/>
-	<c:set var="type" value="${user.travellertype}"/>
-	<c:set var="country" value="${user.country}"/>
-	<c:set var="passport" value="${user.passportno}"/>
+	<c:set var="phoneno" value="${user.phoneno}"/>
+	
+	
+	
+	
   
   
   
@@ -1812,44 +1813,29 @@ Resources1× 0.5× 0.25×Rerun
       <td class="bg-danger"style="border-radius: 25px 25px;">${user.email}</td>
     </tr>
     
+    
+     <tr>
+      <th scope="row">USER NAME</th> 
+      <td class="bg-danger"style="border-radius: 25px 25px;">${user.username}</td>
+    </tr>
+    
     <tr>
       <th scope="row">PASSWORD</th> 
       <td class="bg-danger"style="border-radius: 25px 25px;">${user.password}</td>
     </tr>
     
     
-    <tr>
-      <th scope="row">AREA CODE</th> 
-      <td class="bg-danger"style="border-radius: 25px 25px;">${user.areacode}</td>
-    </tr>
-    
+   
     
     
     <tr>
-      <th scope="row">NUMBER</th> 
-      <td class="bg-danger"style="border-radius: 25px 25px;">${user.number}</td>
+      <th scope="row"> PHONE NUMBER</th> 
+      <td class="bg-danger"style="border-radius: 25px 25px;">${user.phoneno}</td>
     </tr>
     
     
     
-     <tr>
-      <th scope="row">TRAVELLER TYPE</th> 
-      <td class="bg-danger"style="border-radius: 25px 25px;">${user.travellertype}</td>
-    </tr>
     
-    
-    
-    <tr>
-      <th scope="row">COUNTRY</th> 
-      <td class="bg-danger"style="border-radius: 25px 25px;">${user.country}</td>
-    </tr>
-    
-    
-    
-    <tr>
-      <th scope="row">PASSPORT NO</th> 
-      <td class="bg-danger"style="border-radius: 25px 25px;">${user.passportno}</td>
-    </tr>
     
     
     </c:forEach>
@@ -1857,15 +1843,14 @@ Resources1× 0.5× 0.25×Rerun
   
 </table>
    <c:url value="UpdateProfile.jsp" var="userupdate">
+   
 		<c:param name="userid" value="${userid}"/>
 		<c:param name="name" value="${name}"/>
 		<c:param name="email" value="${email}"/>
+		<c:param name="username" value="${username}"/>
 		<c:param name="password" value="${password}"/>
-		<c:param name="areacode" value="${areacode}"/>
-		<c:param name="number" value="${number}"/>
-		<c:param name="type" value="${type}"/>
-		<c:param name="country" value="${country}"/>
-		<c:param name="passport" value="${passport}"/>
+		<c:param name="phoneno" value="${phoneno}"/>
+		
 	</c:url>
 	
 	<a href="${userupdate}"class="animated-button1" style="margin: 12px 350px;padding: 6px 6px;width: 50%; border-radius:25px">
@@ -1879,15 +1864,13 @@ Resources1× 0.5× 0.25×Rerun
 	
 	
 	<c:url value="DeleteProfile.jsp" var="userdelete">
+	
 		<c:param name="userid" value="${userid}"/>
 		<c:param name="name" value="${name}"/>
 		<c:param name="email" value="${email}"/>
+		<c:param name="username" value="${username}"/>
 		<c:param name="password" value="${password}"/>
-		<c:param name="areacode" value="${areacode}"/>
-		<c:param name="number" value="${number}"/>
-		<c:param name="type" value="${type}"/>
-		<c:param name="country" value="${country}"/>
-		<c:param name="passport" value="${passport}"/>
+		<c:param name="phoneno" value="${phoneno}"/>
 	</c:url>
 	<a href="${userdelete}"class="animated-button1" style="margin: 12px 350px;padding: 6px 6px;width: 50%; border-radius:25px">
 	

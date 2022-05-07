@@ -187,15 +187,12 @@ h2{
   margin-right: auto;">
         <thead>
         <tr>
-            <th>Traveler ID</th>
+             <th>Traveler ID</th>
             <th>Traveler Name</th>
+             <th>User Name</th>
             <th>Traveler Email</th>
-            <th>Password</th>
-            <th>Area code</th>
-            <th>Number</th>
-            <th>Traveler Type</th>
-            <th>Country</th>
-             <th>Passport No</th>
+             <th>Password</th>
+            <th>Phone Number</th>
         </tr>
         </thead>
         <tbody>
@@ -206,20 +203,16 @@ h2{
             <td></td>
             <td></td>
              <td></td>
-              <td></td>
-               <td></td>
-                <td></td>
+              
         </tr>
         <tr>
-            <td>${user.userid}</td>
+           <td>${user.userid}</td>
             <td>${user.name}</td>
             <td>${user.email}</td>
-            <td>${user.password}</td>
-            <td>${user.areacode}</td>
-             <td>${user.number}</td>
-              <td>${user.travellertype}</td>
-               <td>${user.country}</td>
-                <td>${user.passportno}</td>
+            <td>${user.username}</td>
+            
+            <td>.........</td>
+           <td>${user.phoneno}</td>
         </tr>
        <tr>
             <td></td>

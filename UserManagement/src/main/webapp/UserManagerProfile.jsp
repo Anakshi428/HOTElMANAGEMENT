@@ -5,7 +5,7 @@
 <html>
 <head>
 	<meta charset="ISO-8859-1">
-	<title>User Profile</title>
+	<title>User Manager Profile</title>
 	
 	<!-- meta tags -->
     <meta charset="UTF-8" />
@@ -164,23 +164,20 @@ h2{
 	<c:set var="userid" value="${user.userid}"/>
 	<c:set var="name" value="${user.name}"/>
 	<c:set var="email" value="${user.email}"/>
+	<c:set var="username" value="${user.username}"/>
 	<c:set var="password" value="${user.password}"/>
-	<c:set var="areacode" value="${user.areacode}"/>
-	<c:set var="number" value="${user.number}"/>
-	<c:set var="type" value="${user.travellertype}"/>
-	<c:set var="country" value="${user.country}"/>
-	<c:set var="passport" value="${user.passportno}"/>
+	<c:set var="phonenumber" value="${user.phoneno}"/>
+	
+	
         <thead>
         <tr>
             <th>Traveler ID</th>
             <th>Traveler Name</th>
+             <th>User Name</th>
             <th>Traveler Email</th>
-            <th>Password</th>
-            <th>Area code</th>
-            <th>Number</th>
-            <th>Traveler Type</th>
-            <th>Country</th>
-             <th>Passport No</th>
+             <th>Password</th>
+            <th>Phone Number</th>
+            
         </tr>
         </thead>
         <tbody>
@@ -189,33 +186,27 @@ h2{
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
+          <td></td>
              <td></td>
-              <td></td>
-               <td></td>
-                <td></td>
+             
         </tr>
         <tr>
             <td>${user.userid}</td>
             <td>${user.name}</td>
+            <td>${user.username}</td>
             <td>${user.email}</td>
             <td>.........</td>
-            <td>${user.areacode}</td>
-             <td>${user.number}</td>
-              <td>${user.travellertype}</td>
-               <td>${user.country}</td>
-                <td>${user.passportno}</td>
+           <td>${user.phoneno}</td>
+              
         </tr>
        <tr>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
              <td></td>
-              <td></td>
-               <td></td>
-                <td></td>
+            
+             
         </tr>
         <tbody>
         </c:forEach>
@@ -227,19 +218,17 @@ h2{
 		<c:param name="userid" value="${userid}"/>
 		<c:param name="name" value="${name}"/>
 		<c:param name="email" value="${email}"/>
+		<c:param name="username" value="${user.username}"/>
 		<c:param name="password" value="${password}"/>
-		<c:param name="areacode" value="${areacode}"/>
-		<c:param name="number" value="${number}"/>
-		<c:param name="type" value="${type}"/>
-		<c:param name="country" value="${country}"/>
-		<c:param name="passport" value="${passport}"/>
+		<c:param name="phonenumber" value="${phoneno}"/>
+		
 	</c:url>
 	<a href="${userdelete}">
 	
 	<input type="submit"  class="btn btn-danger"   name="submit"value="Delete" style="margin: 12px 250px;padding: 2px 2px;width: 10%;">
 	</a>
 	
-	<a href="test.jsp">
+	<a href="UserReport.jsp">
 	<input type="submit" class="btn btn-warning"  name="submit"value="Generate Report" style="margin: 12px 250px;padding: 2px 2px;width: 10%;">
 	</a><br><br>
 	

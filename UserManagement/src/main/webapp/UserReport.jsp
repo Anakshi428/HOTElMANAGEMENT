@@ -44,7 +44,7 @@ html2pdf().from(invoice).set(opt).save();
 <div class="row">
 <div class="col-sm-6">
 <div class="mb-4 pull-left"> <ul class="list list-unstyled mb-0 text-left">
-<li>DIREX Tours Head Office</li>
+<li>CEYLON PARADISE</li>
 <li>SriLanka</li>
 <li>+9411 2 404 878 </li>
 </ul>
@@ -55,7 +55,7 @@ html2pdf().from(invoice).set(opt).save();
 <div class="text-sm-right">
 <h4 class="invoice-color mb-2 mt-md-2">Report #BBB1001</h4>
 <ul class="list list-unstyled mb-0">
-<li>Date: <span class="font-weight-semibold">October 12, 2021</span></li>
+<li>Date: <span class="font-weight-semibold">May 12, 2022</span></li>
 </ul>
 </div>
 </div>
@@ -64,7 +64,7 @@ html2pdf().from(invoice).set(opt).save();
 <sql:setDataSource
 var="myDS"
 driver="com.mysql.jdbc.Driver"
-url="jdbc:mysql://localhost:3306/direx"
+url="jdbc:mysql://localhost:3306/hotel_management"
 user="root" password="ana123"
 />
 <sql:query var="listPackage" dataSource="${myDS}">
@@ -73,28 +73,23 @@ SELECT * FROM user ;
 <!--/package details table-->
 <table border = '1' width = 100%>
 <tr>
-<th>Traveler ID</th>
+
+              <th>Traveler ID</th>
             <th>Traveler Name</th>
+             <th>User Name</th>
             <th>Traveler Email</th>
-            <th>Password</th>
-            <th>Area code</th>
-            <th>Number</th>
-            <th>Traveler Type</th>
-            <th>Country</th>
-             <th>Passport No</th>
+             <th>Password</th>
+            <th>Phone Number</th>
 </tr>
 <c:forEach var="user" items="${listPackage.rows}">
 <tr>
-<td><c:out value="${user.UserId}" /></td>
- <td><c:out value="${user.Name}" /></td>
-  <td><c:out value="${user.Email}" /></td>        
-     <td><c:out value="${user.Password}" /></td>      
-    <td><c:out value="${user.AreaCode}" /></td>        
-     <td><c:out value="${user.Number}" /></td>        
-      <td><c:out value="${user.TravellerType}" /></td>       
-      <td><c:out value="${user.Country}" /></td>         
-       <td><c:out value="${user.PassportNo}" /></td>           
-               
+<td><c:out value="${user.userid}" /></td>
+ <td><c:out value="${user.name}" /></td>
+  <td><c:out value="${user.email}" /></td>        
+     <td><c:out value="${user.username}" /></td>      
+    <td><c:out value="${user.password}" /></td>        
+     <td><c:out value="${user.phoneno}" /></td>        
+      
 </tr>
 </c:forEach>
 </table> </div>

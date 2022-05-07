@@ -41,12 +41,10 @@
 	String userid = request.getParameter("userid");
 	String name = request.getParameter("name");
 	String email = request.getParameter("email");
+	String username = request.getParameter("username");
 	String password = request.getParameter("password");
-	String areacode = request.getParameter("areacode");
-	String number = request.getParameter("number");
-	String travellertype = request.getParameter("type");
-	String country = request.getParameter("country");
-	String passportno = request.getParameter("passport");
+	String phoneno = request.getParameter("phoneno");
+	
 	%>
 	
 	<jsp:include page="/WEB-INF/view//Header.jsp"></jsp:include>
@@ -66,32 +64,23 @@
 	</tr>
 	<tr>
 		 <th scope="row">EMAIL</th> 
-		<td style="border-radius: 25px 25px;"><input class="form-control" type="text" name="email" value="<%=email%>" ></td>
+		<td style="border-radius: 25px 25px;"><input class="form-control"type="text" name="email" value="<%=email%>" ></td>
+	</tr>
+	<tr>
+		<th scope="row">USER NAME</th> 
+		<td style="border-radius: 25px 25px;"><input class="form-control"type="text" name="username" value="<%=username%>" ></td>
 	</tr>
 	<tr>
 		<th scope="row">PASSWORD</th> 
-		<td style="border-radius: 25px 25px;"><input class="form-control" type="text" name="password" value="<%=password%>" ></td>
+		<td style="border-radius: 25px 25px;"><input class="form-control"type="text" name="password" value="<%=password%>" ></td>
+	</tr>
+	
+	<tr>
+		 <th scope="row">PHONE NUMBER</th> 
+		<td style="border-radius: 25px 25px;"><input class="form-control"type="text" name="phoneno" value="<%=phoneno%>" ></td>
 	</tr>
 	<tr>
-		<th scope="row">AREA CODE</th> 
-		<td style="border-radius: 25px 25px;"><input class="form-control" type="text" name="areacode" value="<%=areacode%>" ></td>
-	</tr>
-	<tr>
-		 <th scope="row">NUMBER</th> 
-		<td style="border-radius: 25px 25px;"><input class="form-control" type="text" name="number" value="<%=number%>" ></td>
-	</tr>
-	<tr>
-		<th scope="row">TRAVELLER TYPE</th> 
-		<td style="border-radius: 25px 25px;"><input class="form-control" type="text" name="type" value="<%=travellertype%>" ></td>
-	</tr>
-	<tr>
-		<th scope="row">COUNTRY</th> 
-		<td style="border-radius: 25px 25px;"><input class="form-control" type="text" name="country" value="<%=country%>" ></td>
-	</tr>
-	<tr>
-		<th scope="row">PASSPORT NO</th> 
-		<td style="border-radius: 25px 25px;"><input class="form-control" type="text" name="passport" value="<%=passportno%>" ></td>
-	</tr>
+		
 
 	</table>
 	<br>
