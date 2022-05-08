@@ -97,6 +97,26 @@
 <servlet-name>loginm</servlet-name>
 <url-pattern>/newM</url-pattern>
 </servlet-mapping>
+
+<servlet>
+		<servlet-name>TestServlet</servlet-name>
+		<servlet-class>com.adminbooking.TClass</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>TestServlet</servlet-name>
+		<url-pattern>/tsrvlt</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>AdminLoginServlet</servlet-name>
+	<servlet-class>com.admin.AdminLoginServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>AdminLoginServlet</servlet-name>
+	<url-pattern>/adminLogin</url-pattern>
+	</servlet-mapping>
 	
 	
 	
